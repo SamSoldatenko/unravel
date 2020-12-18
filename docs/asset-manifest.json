@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "//samsoldatenko.github.io/unravel/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "//samsoldatenko.github.io/unravel/static/js/main.afe51bf8.chunk.js",
+    "main.js.map": "//samsoldatenko.github.io/unravel/static/js/main.afe51bf8.chunk.js.map",
+    "runtime-main.js": "//samsoldatenko.github.io/unravel/static/js/runtime-main.23b152fa.js",
+    "runtime-main.js.map": "//samsoldatenko.github.io/unravel/static/js/runtime-main.23b152fa.js.map",
+    "static/js/2.66a3d33c.chunk.js": "//samsoldatenko.github.io/unravel/static/js/2.66a3d33c.chunk.js",
+    "static/js/2.66a3d33c.chunk.js.map": "//samsoldatenko.github.io/unravel/static/js/2.66a3d33c.chunk.js.map",
+    "static/js/3.97e1db77.chunk.js": "//samsoldatenko.github.io/unravel/static/js/3.97e1db77.chunk.js",
+    "static/js/3.97e1db77.chunk.js.map": "//samsoldatenko.github.io/unravel/static/js/3.97e1db77.chunk.js.map",
+    "index.html": "//samsoldatenko.github.io/unravel/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "//samsoldatenko.github.io/unravel/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.66a3d33c.chunk.js.LICENSE.txt": "//samsoldatenko.github.io/unravel/static/js/2.66a3d33c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "//samsoldatenko.github.io/unravel/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23b152fa.js",
+    "static/js/2.66a3d33c.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.afe51bf8.chunk.js"
+  ]
+}
