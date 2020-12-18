@@ -1,0 +1,25 @@
+
+name: Deploy Unravel to Github Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - run : yarn
+      - run : yarn build
+        env :
+          PUBLIC_URL: //samsoldatenko.github.io/unravel/
+      - run : mv build docs
+      - run : git add docs
+      - run : git config user.name github-actions
+      - run : git config user.email github-actions@github.com
+      - run : git commit -m "Automatic Deploy action run by github-actions"
+      - run : git push origin HEAD:gh-pages --force
+
