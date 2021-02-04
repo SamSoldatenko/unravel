@@ -1,0 +1,60 @@
+{
+  "units": [
+    {
+      "type": "jar",
+      "name": "build/libs/unravel-java.jar",
+      "classes": [
+        {
+          "name": "unravel/java/Location"
+        },
+        {
+          "name": "unravel/java/DemoLocation$Demo",
+          "innerOf": "unravel/java/DemoLocation"
+        },
+        {
+          "name": "unravel/java/DemoLocation",
+          "extends": "unravel/java/Location",
+          "implements": [
+            "java/io/Serializable",
+            "java/lang/Runnable"
+          ]
+        },
+        {
+          "name": "unravel/java/Analyzer"
+        },
+        {
+          "name": "unravel/java/App",
+          "methods": [
+            {
+              "name": "main",
+              "args": [
+                "String[]"
+              ],
+              "throws": [
+                "java/io/IOException"
+              ],
+              "calls": [
+                {
+                  "class": "unravel/java/Analyzer",
+                  "method": "Analyzer"
+                },
+                {
+                  "class": "java/nio/file/Paths",
+                  "method": "get"
+                },
+                {
+                  "class": "unravel/java/Analyzer",
+                  "method": "analyzeFile"
+                },
+                {
+                  "class": "unravel/java/Analyzer",
+                  "method": "writeJson"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

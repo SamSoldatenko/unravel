@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
+import JsonFileSelector from './JsonFIleSelector'
+import CodeGraph from './CodeGraph';
 
 function App() {
+  const [file, setFile] = useState();
+  const [data, setData] = useState();
+  useEffect(() => {
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = () => {
+        setData(JSON.parse(reader.result));
+      }
+      reader.readAsText(file);
+    }
+  }, [file])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <JsonFileSelector onFileSelected={setFile} />
+      <br/>
+      <CodeGraph data={data}/>
     </div>
   );
 }
